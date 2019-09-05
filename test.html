@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <li>test</li>
+  <li>test</li>
+  <li>test</li>
+  <li>test</li>
+  <li>test</li>
+  <li>test</li>
+  <li>test</li>
+  <li>test</li>
+  <li>test</li>
+  <li>test</li>
+  <script>
+  const lis = document.querySelectorAll("li");
+    lis.forEach(function(l,i){
+      function speak(){
+        console.log(i)
+      }
+      l.addEventListener("click", speak)
+    })
+  </script>
+</body>
+</html>
